@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Random Wikipedia From Category",
+  "version": "1.0.0",
+  "description": "Load a random Wikipedia article under a category",
+  "homepage_url": "https://github.com/proprietary/random-wikipedia-from-category",
+  "permissions": [
+    "activeTab",
+	"storage",
+	"tabs"
+  ],
+  "browser_action": {
+    "default_title": "Random Wikipedia article"
+  },
+  "background": {
+    "scripts": ["src/chrome-helpers.js", "src/background.js"],
+  	"persistent": false
+  },
+  "options_page": "src/options.html"
+}
+

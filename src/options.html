@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Random Wikipedia From Category</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+main {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	align-items: start;
+}
+
+main > div {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-start: 2;
+	padding: 0.5em 0em 0.5em 0;
+	margin: 0.2em;
+}
+ 
+main > div > * {
+	grid-column-start: 1;
+}
+
+</style>
+	</head>
+	<body>
+		<main>
+			<div>
+				<label for="#category_page">
+					Category page name (e.g., <code>Category:Computer_science</code>)
+				</label>
+				<input type="text" id="category_page" />
+				</div>
+			</div>
+			<div>
+				<label for="#subdomain">
+					Wikipedia subdomain for your language (e.g., "en", "de")
+				</label>
+				<input type="text" id="subdomain" />
+			</div>
+			<div>
+				<button type="button" id="save_btn">Save</button>
+			</div>
+		</main>
+		<script src="options.js"></script>
+	</body>
+</html>
+
