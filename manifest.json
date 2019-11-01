@@ -13,7 +13,7 @@
     "default_title": "Random Wikipedia article"
   },
   "background": {
-      "scripts": ["src/background.js"],
+      "scripts": ["src/background.js", "src/helpers.js"],
   	"persistent": false
   },
   "options_page": "src/options.html"
